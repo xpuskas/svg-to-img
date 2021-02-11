@@ -32,12 +32,6 @@
     "build": "tsc --pretty",
     "prepare": "npm run build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build && npm run test",
-      "pre-push": "npm run build && npm run test"
-    }
-  },
   "jest": {
     "setupFiles": [
       "jest-canvas-mock"
@@ -105,6 +99,6 @@
     "typescript": "2.9.2"
   },
   "dependencies": {
-    "puppeteer": "2.0.0"
+    "puppeteer": "^2.1.0"
   }
 }
